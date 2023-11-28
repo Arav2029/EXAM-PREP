@@ -1,0 +1,148 @@
+t2.nano, t2.micro, t2.small, t2.medium, t3.nano, t3.micro, t3.small, t3.medium.
+
+
+
+AWS CERTIFICATION EXAM PREP CPE
+
+
+Aravind 9 to 10pm
+rajat 10pm
+pragie 9 to 10
+gokul same
+final--- 9.30 to 10.30
+
+documentation 10 pges per day------ cpe
+documentation 20qn
+INDEX--18
+
+starts from 19pg
+whizlabs
+EC2,LAMBDA--3
+S3,EBS,EFS--19
+DB---33
+IAM---48
+MIGRATION---80
+CDN---81
+BILLING----111
+
+
+---------
+27-11----EC2,LAMBDA,FARGATE
+RDS---8 read replica
+RAJATH---SB VDO---ALSO DOCUMENTATION
+KEYS,IAM,S3,NETWORKING,BILLING
+32,000 IOPS----EBS Provisioned IOPS
+---------------
+key words
+SSD-backed volumes
+(Solid State Drive)
+Optimized for transactional workload
+------------
+General Purpose SSD- gp2
+(1 GiB — 16 TiB)
+IOPS : 3000 to 20000 Max / Volume
+used for--Boot volumes
+Development /Test
+Low-latency Apps
+Virtual Desktops
+--------------------
+Provisioned IOPS SSD (io1)
+low-latency or high-throughput
+Consistent IOPS (16,000+ IOPS )
+Transactional workloads
+USED FOR--MongoDB / NoSQL
+MySQL / RDS
+Latency Critical Apps(DB)
+-----------------
+HDD-backed volumes:
+(Magnetic Drive)Low-Cost throughput-intensive workloads
+(Not Suitable for Low Latency(IOPS) -- i.e. booting
+-------------
+Throughput Optimized HDD (st1)
+Low Cost -
+Frequently accessed,
+throughput-intensive &
+Large-Sequential O/I -- 500 MB/s
+USED FOR---
+Stream Processing
+Big Data Processing
+Data Warehouse
+---------------
+Cold HDD (sc1)
+Lowest Cost - less frequently
+accessed data
+Throughput : 250 MiB/s
+USED FOR--
+Colder Data requires
+fewer scans per day.
+
+
+8reaad replica ----amazon auroura upto 15 read replica..comparte to RDS 
+
+
+IN 2 WEEKS ----STORAGE
+THEORY ---3 SERVICES
+QN 30PGES--15QN
+
+------------------
+
+DB---RDS
+Amazon Aurora
+It’s only compatible with PostgreSQL/MySQL
+
+It is only supported by regions which have minimum 3 availability zones.
+● High availability of 99.99%. Data in Aurora is kept as 2 copies in each AZ
+with a minimum 3 AZ’s making a total of 6 copies.
+● It can have up to 15 Read replicas (RDS has only 5).
+● It can scale up to 128 TB per database instance.
+● Aurora DB cluster comprises two instances
+
+PRIMARY DB INSTANCE---R/W
+AURORRA REPLICA---R
+
+-------------------------------------------------------
+Amazon DocumentDB
+
+It is compatible with MongoDB versions 3.6 and 4.0.
+ DocumentDB storage scales automatically in increments of 10GB and
+maximum up to 64TB.
+● Provides up to 15 Read replicas with single-digit millisecond latency.
+● All database instances are highly secure as they reside in VPCs which only
+allow a given set of users to access through security group permissions.
+● It supports role-based access control (RBAC).
+● Minimum 6 read copies of data is created in 3 availability zones making
+it fault-tolerant.
+● Self-healing 
+----------------------------------------------
+
+Amazon DynamoDB---N RDS
+
+
+AWS DynamoDB is a Key-value and DocumentDB database by Amazon.
+● It delivers a single Digit millisecond Latency.
+● It can handle 20 million requests per second and 10 trillion requests a day.
+● It is a Serverless Service; it means no servers to manage
+
+
+DynamoDB Accelerator
+● Amazon DynamoDB Accelerator (DAX) is a fully managed in-memory cache
+engine designed for Amazon DynamoDB.
+● It can deliver up to 10 times performance improvement and can handle
+around 20 million requests per second.
+● The performance can improve from milliseconds to microseconds.
+● DAX is for the workloads that are read-intensive, not write-intensive. DAX is
+not for strongly consistent reads.
+-----------------------------------------------
+
+Amazon ElastiCache
+
+ElastiCache is a fully managed in-memory data store for latency for high workload
+It works with both Redis and
+Memcached protocol based engines 
+
+
+
+
+
+
+
