@@ -140,6 +140,27 @@ ElastiCache is a fully managed in-memory data store for latency for high workloa
 It works with both Redis and
 Memcached protocol based engines 
 
+CHALLENGE LABS
+Module 3 - Hosting a static website
+Module 4 - Deploying a Web Application on AWS 
+Module 5 - Migrating a DB to Amazon RDS
+Module 6 - Creating a Virtual Private Cloud environment
+Module 8 - Controlling AWS by using IAM
+Module 9 - Creating a Highly Available Environment using Auto Scaling and Load Balancers
+Module 10 - Automating Infrastructure Deployment with AWS CloudFormation 
+Module 13 - Implementing a Serverless Architecture with AWS Managed Services-------------------
+-----------------------------------------------------------------------
+
+AWS SAA-CO3---------15apply------25 to 30th exam
+--------------------------------------------------------------------
+
+
+
+
+IN 2 WEEKS ----STORAGE
+THEORY ---3 SERVICES
+QN 30PGES--25QN
+-------------------------------------------------
 
 
 
