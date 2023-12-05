@@ -140,6 +140,9 @@ ElastiCache is a fully managed in-memory data store for latency for high workloa
 It works with both Redis and
 Memcached protocol based engines 
 
+
+-------------------------------------------------
+
 CHALLENGE LABS
 Module 3 - Hosting a static website
 Module 4 - Deploying a Web Application on AWS 
@@ -148,7 +151,7 @@ Module 6 - Creating a Virtual Private Cloud environment
 Module 8 - Controlling AWS by using IAM
 Module 9 - Creating a Highly Available Environment using Auto Scaling and Load Balancers
 Module 10 - Automating Infrastructure Deployment with AWS CloudFormation 
-Module 13 - Implementing a Serverless Architecture with AWS Managed Services-------------------
+Module 13 - Implementing a Serverless Architecture with AWS Managed Services-------------------demo
 -----------------------------------------------------------------------
 
 AWS SAA-CO3---------15apply------25 to 30th exam
@@ -162,8 +165,108 @@ THEORY ---3 SERVICES
 QN 30PGES--25QN
 -------------------------------------------------
 
+Exam Preparation Tips & Tricks
+Here I am listing the actual tips and tricks that would help you to pass this exam.
+The following topics are mostly covered in the exam:
+1. Compute
+2. Cost management
+3. Database
+4. Disaster recovery
+5. High availability
+6. Management and governance
+7. Microservices and component decoupling
+8. Migration and data transfer
+9. Networking, connectivity, and content delivery
+10. Security
+11. Serverless design principles
+12. Storage
 
 
+Important Tips:
+1. Download study guide from AWS official site and go through each and every concepts. This makes you to 
+remember the important concepts.
+2. Start your AWS free tier or Sign-up with Whizlabs account to get the hands-on experience on AWS labs. 
+Whizlabs providing 200+ free AWS hands-on labs.
+3. While you are preparing for the exam, keep taking the notes and maintain them safely. These notes are 
+important to revise just before the exam.
+4. You have to imagine yourself as an architect and apply the contents using the AWS best practices and well 
+architected framework.
+5. AWS documentations and AWS FAQs are the most important part of your preparation. Keep reading them 
+again and again to understand all the concepts.
+6. Completely read the well architected framework where most of the questions would be asked from the design 
+concepts.
+7. Most of the questions may be asked around three-tier architecture like EC2, VPC, and databases so plan to 
+study them how to use subnets, multi-AZ, security groups, NACL, ELB, Auto-scaling, etc for designing 
+highly available, fault-tolerant, and secure systems.
+8. Learn the concepts of :
+1. AWS EKS
+2. AWS ECS
+3. AWS CloudTrail
+4. AWS Config
+9. Study all the AWS services which helps you to connect the on-premise systems to cloud systema
 
+---------------------------------------------------------------------------------------
+
+
+part 1
+
+high performance and frequently------cluster placement in az,,,,,HA---spread placement
+active passive failover---if primary db fails
+scalble application---s3 with transfer accelerstion to host app
+windows file server----fsx
+decoupling(microservice)----sqs,,,,sns--pub sub model
+real time---kinesis data streams,,,,,near real time----kinesis data firehose....analyse data---kimesis data anlaysis
+regular interval----AS Schedulinh policy 
+reads are causing high I/O----read replica
+50 tb---SNOWBALL,,secure  network connect---direct connect (in transit)
+----------------------------------------------------------
+part 2----198
+CDN (block acess from  few cntries)----geo restriction form blocked countries
+across muulti AZ----EFS and it can scale accordingly
+aurora--endpoints,,,multi AZ db cluster,,also have 15 read replica(improve performance)
+withstand loss of an instace,million transsacation -----ec2 instance store
+static html page----s3,,,around the world ---cdn
+lambda--unpredictive workload,dynmodb--key value pair
+aws global acc----have static ip to map apllication acorss multi region to improve redudunacy
+CROS---muliple aws region
+gateway---s3 and dynmano db
+--------------------------------------------------------
+
+part 3
+
+
+FSx for Lustre for high-performance parallel storage,,,s3 for clod storage
+Amazon EC2 instances,deployed to a second Region-----AMI
+A VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services powered by AWS PrivateLink without requiring an internet gateway, NAT device, VPN connection, 
+or AWS Direct Connect connection
+
+Gateway endpoints -
+A gateway endpoint is a gateway that you specify as a target for a route in your route table for traffic destined 
+to a supported AWS service. The following AWS services are supported:
+Amazon S3 -
+DynamoDB
+
+Amazon RDS MySQL database without encryption-----------ss
+
+How do I encrypt Amazon RDS snapshots?
+The following steps are applicable to Amazon RDS for MySQL, Oracle, SQL Server, PostgreSQL, or 
+MariaDB.
+Important: If you use Amazon Aurora, you can restore an unencrypted Aurora DB cluster snapshot to an 
+encrypted Aurora DB cluster if you specify an AWS Key
+Management Service (AWS KMS) encryption key when you restore from the unencrypted DB cluster 
+snapshot. For more information, see Limitations of Amazon
+RDS Encrypted DB Instances.
+Open the Amazon RDS console, and then choose Snapshots from the navigation pane.
+Select the snapshot that you want to encrypt.
+Under Snapshot Actions, choose Copy Snapshot.
+Choose your Destination Region, and then enter your New DB Snapshot Identifier.
+Change Enable Encryption to Yes.
+Select your Master Key from the list, and then choose Copy Snapshot.
+After the snapshot status is available, the Encrypted field will be True to indicate that the snapshot is 
+encrypted.
+You now have an encrypted snapshot of your DB. You can use this encrypted DB snapshot to restore the DB 
+instance from the DB snapshot
+
+-----------------------------------------------------------------------
 
 
