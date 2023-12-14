@@ -267,6 +267,44 @@ encrypted.
 You now have an encrypted snapshot of your DB. You can use this encrypted DB snapshot to restore the DB 
 instance from the DB snapshot
 
------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
 
+CONTAINERS
+Speed, Agility, require a lot of heavy lifting and for building pipelines
+ECS
+- Need to create task definition (Config like 1 or more con, CPU, memory, launch type, n/w type..)
 
+Containers --> Task(1 or more con app) --> Services --> Cluster
+
+ECS Agent
+- For Control plane communication and control plane (Fully managed)
+- Manages the containers
+- Automated fleet of EC2 Instances
+
+FARGATE
+- Serverless way to manage the services
+      Creating EC2 inst VM's, Join ECS cluster, check whether enough container details, Manage OS, Docker runtime, Full access of infrastructure.
+
+EKS
+- Manages KBS Cluster 
+- Deploys and manages KBS master nodes
+Control plane
+* Worker node (Made of EC2 instances and Self-managed)
+      Compute fleet
+      EKS - Via KBS Worker processor
+* Node group (Semi-managed)
+      Create and delete EC2 instances- Configuration
+* EKS with Fargate (Fully-managed)
+
+ECR
+- Repository for container images (Your app images stored here)
+- Automatically notified (New image update)
+
+Repo name --> Push in different image --> Endpoint to download EKS(or)ECS
+
+FEATURES OF ECR
+- Encrypted and compressed (15MB --> 6.2MB)
+- Faster and agile when loading
+- Reduce cost and it can also create lifecycle policy to use latest image
+
+---------------------------------------------------------------------------------------------------------------
